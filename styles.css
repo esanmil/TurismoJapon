@@ -1,0 +1,40 @@
+.container-one{
+    height: 50px;
+    background: red;
+}
+
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:0;
+    margin: 0;
+}
+
+li{
+    border:6px solid black;
+    background: aquamarine;
+    margin: 5px;
+    padding: 2px;
+    
+}
+
+.container-two{
+    height: 50px;
+    background: green;
+    margin-bottom: 20px;
+}
+
+.container-three{
+    height: 100px;
+    background:blue;
+    margin-bottom: 20px;
+}
+
+.container-four{
+    height: 25px;
+    background: plum;
+}
