@@ -1,49 +1,93 @@
 .container-one{
+    display: flex;
     height: 50px;
     background: red;
+    border: 6px solid black;
 }
 
 
 
-ul{
-    list-style-type: none;
-    display: flex;
+.flex1{
+    
     justify-content: space-around;
     align-items: center;
     padding:0;
     margin: 0;
-}
-
-li{
-    border:6px solid black;
+    flex-basis: 25%;
     background: aquamarine;
-    margin: 5px;
-    padding: 2px;
-    
-}
-
-.flex1{
-   flex-basis: 25%;
+    margin: 10px;
+    padding: 3px;
     
 }
 
 .flex2{
+    
     flex-basis: 50%;
+    justify-content: space-around;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    background: aquamarine;
+    margin: 10px;
+    padding: 3px;
      
  }
 .container-two{
+    border: 6px solid black;
+    display: flex;
     height: 50px;
     background: green;
     margin-bottom: 20px;
 }
 
-.container-three{
+.container-two > div{
+
+    background: chocolate;
+    flex-basis: 100%;
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
     height: 100px;
     background:blue;
     margin-bottom: 20px;
 }
 
+.elemento1{
+
+    background: chocolate;
+    /*flex-basis: 50%;*/
+    flex-grow: 2;
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
+}
+
+.elemento2{
+
+    background: chocolate;
+    /*flex-basis: 50%;*/
+    flex-grow: 1;
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
+}
+
 .container-four{
-    height: 25px;
-    background: plum;
+    display: flex;
+    height: 50px;
+    background: green;
+    margin-bottom: 20px;
+}
+
+.container-four > div{
+
+    background: chocolate;
+    flex-basis: 100%;
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
 }
