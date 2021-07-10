@@ -1,7 +1,7 @@
 .container-one{
     display: flex;
     height: 50px;
-    background: red;
+    background: purple;
     border: 6px solid black;
 }
 
@@ -14,8 +14,8 @@
     padding:0;
     margin: 0;
     flex-basis: 25%;
-    background: aquamarine;
-    margin: 10px;
+    background: orangered;
+    margin: 15px;
     padding: 3px;
     
 }
@@ -27,8 +27,8 @@
     align-items: center;
     padding:0;
     margin: 0;
-    background: aquamarine;
-    margin: 10px;
+    background: orangered;
+    margin: 15px;
     padding: 3px;
      
  }
@@ -36,44 +36,61 @@
     border: 6px solid black;
     display: flex;
     height: 50px;
-    background: green;
+    background:orange;
     margin-bottom: 20px;
 }
 
 .container-two > div{
 
-    background: chocolate;
+    background:yellow;
     flex-basis: 100%;
     padding: 5px;
-    margin: 10px;
+    margin: 15px;
     align-items: center;
 }
 
 .container-three{
     display: flex;
-    height: 130px;
-    background: green;
+    flex-wrap: wrap;
+    height: auto;
+    background: black;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ];
+    border: 6px solid black;
     margin-bottom: 20px;
 }
 
 
 .elemento1{
-
-    background: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+    background: blue;
+    justify-content: space-between;
     flex-grow: 2;
     padding: 5px;
     margin: 10px;
     align-items: center;
 }
 
-.elemento1 > div {
-    background: pink;
+
+
+.elemento1bis {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 45%;
+    height: 20px;
+    background:lightblue;
     margin: 10px;
 }
 
-.elemento2{
+.elemento1bisbis{
+    height: 20px;
+    flex-basis: 100%;
+    background: turquoise;
+    margin:10px;
+}
 
-    background: chocolate;
+.elemento2{
+    
+    background: coral;
     flex-grow: 1;
     padding: 5px;
     margin: 10px;
@@ -81,26 +98,45 @@
 }
 
 .elemento2 > div {
+    display: flex;
+    height: 20px;
     background: yellow;
     margin: 10px;
    
 }
-/*.elemento2bisbis{
-    background: yellow;
-}*/
+
 
 .container-four{
     display: flex;
     height: 50px;
-    background: green;
-    margin-bottom: 20px;
+    background: black;
+    border: 6px solid black;
+
 }
 
 .container-four > div{
 
-    background: chocolate;
+    background: yellow;
     flex-basis: 100%;
     padding: 5px;
-    margin: 10px;
+    margin: 15px;
     align-items: center;
+}
+/* Responsive layout */
+@media (max-width:700px){
+    .container-three {
+        flex-direction: column;
+        border:yellow solid 10px;
+        background: yellow;
+        width: auto;
+        
+        
+      }
+
+      .elemento1bis{
+        margin: 1px 10px;
+      }
+
+      .elemento1bisbis{
+        margin: 1px 10px;
 }
