@@ -49,32 +49,45 @@
     align-items: center;
 }
 
-.grid-container{
-    display: grid;
-    height: 100px;
-    background:blue;
+.container-three{
+    display: flex;
+    height: 130px;
+    background: green;
     margin-bottom: 20px;
 }
+
 
 .elemento1{
 
     background: chocolate;
-    /*flex-basis: 50%;*/
     flex-grow: 2;
     padding: 5px;
     margin: 10px;
     align-items: center;
 }
 
+.elemento1 > div {
+    background: pink;
+    margin: 10px;
+}
+
 .elemento2{
 
     background: chocolate;
-    /*flex-basis: 50%;*/
     flex-grow: 1;
     padding: 5px;
     margin: 10px;
     align-items: center;
 }
+
+.elemento2 > div {
+    background: yellow;
+    margin: 10px;
+   
+}
+/*.elemento2bisbis{
+    background: yellow;
+}*/
 
 .container-four{
     display: flex;
