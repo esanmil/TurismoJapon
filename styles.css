@@ -182,3 +182,7 @@
     .aside > div {
         background: papayawhip;
     }
+
+    .footer > nav{
+        background: rgb(224, 213, 92);
+    }
