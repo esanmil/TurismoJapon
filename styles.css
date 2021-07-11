@@ -1,188 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+ 
+.padre{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*Estilos navegacion*/
 
 .header{
-    background:black;
+    margin: 20px;
+    background: url(img/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg) no-repeat center center/cover;
 }
 
     .menu{
         display: flex;
-        height: 50px;
-        background: purple;
-        border: 15px solid black;
+        align-items: flex-end;
+        padding: 50px;
     }
 
 
-
-        .flex1{
+        .nav-menu{
             
-            /*  flex-basis: 25%;*/
-            justify-content: space-around;
-            align-items: center;
-            flex: 1 1 auto;
-            padding:0;
-            margin: 0;
-            background: orangered;
-            margin: 15px;
-            padding: 3px;
+           
+            display: flex;
+            
             
         }
 
-        .flex2{
-            
-            /*flex-basis: 50%;*/
-            justify-content: space-around;
-            align-items: center;
-            flex: 5 1 auto;
-            padding:0;
-            margin: 0;
-            background: orangered;
-            margin: 15px;
-            padding: 3px;
-            
+        .menu ul li {
+            padding: 5px 50px;
         }
-.container-two{
-    border: 15px solid black;
+
+        .menu-logo{
+            width: 50px;
+        }
+
+        .menu ul li a{
+            padding: 2px;
+        }
+
+        .menu ul li a:hover{
+            border-bottom: 2px solid grey ;
+        }
+
+.icons{
     display: flex;
-    height: 50px;
-    background:orange;
-    margin-bottom: 20px;
-    border-top: none;
-}
-
-.container-two > h1{
-
-    background:yellow;
-    flex-basis: 100%;
-    padding: 5px;
-    margin: 15px;
-    align-items: center;
-}
-
-.section{
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    background: black;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ];
-    border: 6px solid black;
-    margin-bottom: 20px;
-}
-
-
-.articulos{
-    display: flex;
-    flex-wrap: wrap;
-    background: blue;
-    justify-content: space-between;
-    flex-grow: 2;
-    padding: 5px;
-    margin: 10px;
-    align-items: center;
-}
-
-
-.elemento1bis {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 45%;
-    height: 20px;
-    background:lightblue;
-    margin: 10px;
-}
-
-.elemento1bisbis{
-    height: 20px;
-    flex-basis: 100%;
-    background: turquoise;
-    margin:10px;
-}
-
-.aside{
+    flex-direction: column;
+    margin-left: auto;
     
-    background: orangered;
-    flex-grow: 1;
-    padding: 5px;
-    margin: 10px;
-    align-items: center;
 }
 
-.aside > div {
+.icons i{
+    padding-top: 5px;
+}
+.container-two{
+    width: 100%;
+    height: 500px;
+    padding-bottom: 50px;
     display: flex;
-    height: 20px;
-    background: yellow;
-    margin: 10px;
-   
-}
-
-
-.footer{
-    display: flex;
-    height: 50px;
-    background: black;
-    border: 6px solid black;
-
-}
-
-.footer > nav{
-
-    background: yellow;
-    flex-basis: 100%;
-    padding: 5px;
-    margin: 15px;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 }
 
-/* Responsive layout */
-@media (max-width:700px){
-    .section {
-        flex-direction: column;
-        border:yellow solid 10px;
-        background: yellow;
-        width: auto;
-        
-        
-      }
-
-      .elemento1bis{
-        margin: 1px 10px;
-      }
-
-      .elemento1bisbis{
-        margin: 1px 10px;
+.motto {
+    color:palevioletred;
+    opacity: .7;
 }
 
-@media (max-width:500px){
-    .menu{
-        height: auto;
-        flex-direction: column;
-
-    }
-
-    .flex1, .flex2{
-        height: 20px;
-    }
-
-    .elemento1bis {
-        display: flex;
-        background: lightslategray;
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        height: 20px;
-        margin: 5px 10px;
-    }
-
-    .elemento1bisbis{
-        margin: 5px 10px;
-        background: paleturquoise;
+    
+.articulos{
+    background: lightgray;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
-    .aside{
-        background: coral;
-    }
+.articulos > div{
+    
+    padding: 25px;
+    
+}
 
-    .aside > div {
-        background: papayawhip;
-    }
+.articulos > div >img {
+    width: 100%;
+    height: 300px;
+    
 
-    .footer > nav{
-        background: rgb(224, 213, 92);
-    }
+
+
+
+
