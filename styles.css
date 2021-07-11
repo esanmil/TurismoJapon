@@ -158,6 +158,10 @@
 
     }
 
+    .flex1, .flex2{
+        height: 20px;
+    }
+
     .elemento1bis {
         display: flex;
         background: lightslategray;
