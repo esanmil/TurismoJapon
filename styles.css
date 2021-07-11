@@ -1,46 +1,55 @@
-.container-one{
-    display: flex;
-    height: 50px;
-    background: purple;
-    border: 6px solid black;
+
+
+.header{
+    background:black;
 }
 
+    .menu{
+        display: flex;
+        height: 50px;
+        background: purple;
+        border: 15px solid black;
+    }
 
 
-.flex1{
-    
-    justify-content: space-around;
-    align-items: center;
-    padding:0;
-    margin: 0;
-    flex-basis: 25%;
-    background: orangered;
-    margin: 15px;
-    padding: 3px;
-    
-}
 
-.flex2{
-    
-    flex-basis: 50%;
-    justify-content: space-around;
-    align-items: center;
-    padding:0;
-    margin: 0;
-    background: orangered;
-    margin: 15px;
-    padding: 3px;
-     
- }
+        .flex1{
+            
+            /*  flex-basis: 25%;*/
+            justify-content: space-around;
+            align-items: center;
+            flex: 1 1 auto;
+            padding:0;
+            margin: 0;
+            background: orangered;
+            margin: 15px;
+            padding: 3px;
+            
+        }
+
+        .flex2{
+            
+            /*flex-basis: 50%;*/
+            justify-content: space-around;
+            align-items: center;
+            flex: 5 1 auto;
+            padding:0;
+            margin: 0;
+            background: orangered;
+            margin: 15px;
+            padding: 3px;
+            
+        }
 .container-two{
-    border: 6px solid black;
+    border: 15px solid black;
     display: flex;
     height: 50px;
     background:orange;
     margin-bottom: 20px;
+    border-top: none;
 }
 
-.container-two > div{
+.container-two > h1{
 
     background:yellow;
     flex-basis: 100%;
@@ -49,7 +58,7 @@
     align-items: center;
 }
 
-.container-three{
+.section{
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -59,7 +68,7 @@
 }
 
 
-.elemento1{
+.articulos{
     display: flex;
     flex-wrap: wrap;
     background: blue;
@@ -88,16 +97,16 @@
     margin:10px;
 }
 
-.elemento2{
+.aside{
     
-    background: coral;
+    background: orangered;
     flex-grow: 1;
     padding: 5px;
     margin: 10px;
     align-items: center;
 }
 
-.elemento2 > div {
+.aside > div {
     display: flex;
     height: 20px;
     background: yellow;
@@ -106,7 +115,7 @@
 }
 
 
-.container-four{
+.footer{
     display: flex;
     height: 50px;
     background: black;
@@ -114,7 +123,7 @@
 
 }
 
-.container-four > div{
+.footer > nav{
 
     background: yellow;
     flex-basis: 100%;
@@ -122,9 +131,10 @@
     margin: 15px;
     align-items: center;
 }
+
 /* Responsive layout */
 @media (max-width:700px){
-    .container-three {
+    .section {
         flex-direction: column;
         border:yellow solid 10px;
         background: yellow;
@@ -142,22 +152,30 @@
 }
 
 @media (max-width:500px){
-    .container-one{
+    .menu{
         height: auto;
         flex-direction: column;
 
     }
 
-
     .elemento1bis {
         display: flex;
+        background: lightslategray;
         flex-wrap: wrap;
         flex-basis: 100%;
         height: 20px;
-        background:lightblue;
         margin: 5px 10px;
     }
 
     .elemento1bisbis{
         margin: 5px 10px;
+        background: paleturquoise;
 }
+
+    .aside{
+        background: coral;
+    }
+
+    .aside > div {
+        background: papayawhip;
+    }
